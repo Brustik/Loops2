@@ -8,6 +8,7 @@ public class Main {
               task5();
               task6();
               task7();
+              task8();
 
         }
 
@@ -99,7 +100,6 @@ public class Main {
             System.out.println();
             System.out.println("Задача 7");
             int firstFriday = 3;
-
             for (int dayNumber = 1; dayNumber <= 31; dayNumber++) {
                 if (dayNumber == firstFriday) {
                     System.out.println("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет");
@@ -111,6 +111,12 @@ public class Main {
         public static void task8() {
             System.out.println();
             System.out.println("Задача 8");
+            int currentYear = 2022;
+            for (int year = 0; year <= currentYear + 100; year = year + 79) {
+                if (year >= currentYear - 200) {
+                    System.out.println("В " + year + " год комета пролетит над Землей");
+                }
+            }
 
 
         }
